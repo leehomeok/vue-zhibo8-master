@@ -1,0 +1,206 @@
+{
+    "reason": "success",
+    "result": [
+        {
+            "team_id": 1,
+            "team_name": "广东华南虎",
+            "all_name": "广东东莞银行华南虎",
+            "city": "东莞",
+            "gymnasium": "东风日产文体中心",
+            "coach": "杜锋",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/20061230203890.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 2,
+            "team_name": "八一火箭",
+            "all_name": "八一富邦火箭",
+            "city": "宁波",
+            "gymnasium": "雅戈尔体育馆",
+            "coach": "阿的江",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/20061230201780.jpg",
+            "info": "八一火箭队是CBA联赛历史上的一支传奇球队，隶属于中国人民解放军八一体工大队。利用其独有的球队体制，在1996年至2001年赛季间，他们垄断了所有的六届联赛冠军，球队人才济济，涌现出了阿的江、刘玉栋、李楠、范斌、张劲松、王治郅等众多国内篮坛传奇球员，球队鼎盛时期号称“半支国家队”，球队的主力球员均为中国国家男子篮球队成员。 八一队创造了诸多辉煌的纪录，其中包括11次打进CBA总决赛、8次夺得冠军、3次获得亚军。八一队曾经创造了48连胜的惊人纪录，这也是CBA历史上最长的连胜纪录。"
+        },
+        {
+            "team_id": 3,
+            "team_name": "北京鸭",
+            "all_name": "北京首钢鸭",
+            "city": "北京",
+            "gymnasium": "乐视体育生态中心",
+            "coach": "闵鹿蕾",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/20061230204780.jpg",
+            "info": "北京鸭是CBA近些年崛起的豪门球队，是CBA联赛迄今为止的第四支总冠军球队（前三支分别为八一、上海与广东）。俱乐部前身是中国篮球职业化之前的北京男子篮球队，曾经多次获得中国男篮联赛的冠军和全国运动会冠军，是一支中国男篮联赛的劲旅。中国男子篮球职业化之前，北京队依托其地理优势，曾经是中国篮坛的劲旅之一，涌现出包括黄频捷等一系列国手。在1956年10月于重庆举行的全国男篮甲级联赛中，当时仅有7名球员的北京队出人意料地夺得了冠军，也由此拉开了北京队驰骋中国篮坛的序幕。"
+        },
+        {
+            "team_id": 4,
+            "team_name": "江苏龙",
+            "all_name": "江苏肯帝亚龙",
+            "city": "镇江",
+            "gymnasium": "镇江会展中心体育馆",
+            "coach": "胡雪峰",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/20061230202702.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 5,
+            "team_name": "新疆飞虎",
+            "all_name": "新疆天山农商银行飞虎",
+            "city": "乌鲁木齐",
+            "gymnasium": "红山体育中心体育馆",
+            "coach": "李秋平",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/20061230203702.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 7,
+            "team_name": "辽宁飞豹",
+            "all_name": "辽宁药都本溪飞豹",
+            "city": "本溪",
+            "gymnasium": "本溪市体育馆",
+            "coach": "郭士强",
+            "logo": "http://ww2.sinaimg.cn/mw690/d498a094gw1ex7o618b6fj203c03cwef.jpg",
+            "info": "辽宁男篮俱乐部成立于1995年，是CBA联盟中为数不多的元老球队之一。作为体育人才大省，辽宁的篮球从建国以来就是传统项目，在全运会等大型比赛中也一直是全国前几名的水平。职业化之后，辽宁队征战职业联赛21年，5次杀入总决赛，但可惜全部铩羽而归。"
+        },
+        {
+            "team_id": 8,
+            "team_name": "吉林东北虎",
+            "all_name": "吉林九台农商行东北虎",
+            "city": "长春",
+            "gymnasium": "长春市体育馆",
+            "coach": "鲍勃-邓华德",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/20061230202562.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 9,
+            "team_name": "上海大鲨鱼",
+            "all_name": "上海东方大鲨鱼",
+            "city": "上海",
+            "gymnasium": "源深体育馆",
+            "coach": "刘鹏",
+            "logo": "http://ww1.sinaimg.cn/mw690/d498a094gw1ex7o63n6r0j203c03cjrd.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 10,
+            "team_name": "福建中华鲟",
+            "all_name": "福建泉州银行中华鲟",
+            "city": "晋江",
+            "gymnasium": "祖昌体育馆",
+            "coach": "张德贵",
+            "logo": "http://ww4.sinaimg.cn/mw690/d498a094gw1ex7o5y93msj203c03cwee.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 11,
+            "team_name": "浙江金牛",
+            "all_name": "浙江稠州银行金牛",
+            "city": "义乌",
+            "gymnasium": "义乌梅湖体育馆",
+            "coach": "张博雨（代）",
+            "logo": "http://ww4.sinaimg.cn/mw690/d498a094gw1ex7o67ct19j203c03c3yf.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 12,
+            "team_name": "山东金星",
+            "all_name": "山东高速金星",
+            "city": "济南",
+            "gymnasium": "山东高速大球馆",
+            "coach": "亚历山大-凯萨尔",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/20061230203999.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 13,
+            "team_name": "广州龙狮",
+            "all_name": "广州证券龙狮",
+            "city": "广州",
+            "gymnasium": "天河体育中心篮球馆",
+            "coach": "安德烈亚-马宗",
+            "logo": "http://ww1.sinaimg.cn/mw690/d498a094gw1ex7o5xjiijj203c03cglj.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 14,
+            "team_name": "深圳烈豹",
+            "all_name": "深圳马可波罗烈豹",
+            "city": "深圳",
+            "gymnasium": "龙岗大运中心",
+            "coach": "王建军",
+            "logo": "http://ww1.sinaimg.cn/mw690/d498a094gw1ex7o64cmc9j203c03cglj.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 15,
+            "team_name": "山西猛龙",
+            "all_name": "山西汾酒集团猛龙",
+            "city": "太原",
+            "gymnasium": "山西体育中心",
+            "coach": "许晋哲",
+            "logo": "http://ww2.sinaimg.cn/mw690/d498a094gw1ex7o62z0wbj203c03cjre.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 16,
+            "team_name": "浙江猛狮",
+            "all_name": "浙江广厦猛狮",
+            "city": "杭州",
+            "gymnasium": "杭州广厦体育馆",
+            "coach": "李春江",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/20101229956591.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 17,
+            "team_name": "天津金狮",
+            "all_name": "天津荣钢金狮",
+            "city": "天津",
+            "gymnasium": "葛沽体育馆",
+            "coach": "徐贵军",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/200811101553154.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 18,
+            "team_name": "青岛雄鹰",
+            "all_name": "青岛双星雄鹰",
+            "city": "青岛",
+            "gymnasium": "国信体育馆",
+            "coach": "巩晓彬",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/201012714280.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 19,
+            "team_name": "四川蓝鲸",
+            "all_name": "四川金强蓝鲸",
+            "city": "成都",
+            "gymnasium": "四川省体育馆",
+            "coach": "杨学增",
+            "logo": "http://ww3.sinaimg.cn/mw690/d498a094gw1ex7o64wdf6j203c03ct8n.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 20,
+            "team_name": "江苏大圣",
+            "all_name": "江苏同曦大圣",
+            "city": "常州",
+            "gymnasium": "常州奥体中心",
+            "coach": "胡卫东",
+            "logo": "http://www.cba.gov.cn/cbastats/adm/cbadata/pic/2013521932690.jpg",
+            "info": ""
+        },
+        {
+            "team_id": 21,
+            "team_name": "北京翱龙",
+            "all_name": "北京控股翱龙",
+            "city": "北京",
+            "gymnasium": "国家奥体中心体育馆",
+            "coach": "王锡东",
+            "logo": "http://ww3.sinaimg.cn/mw690/d498a094gw1ex7o5x5uqqj203c03caa2.jpg",
+            "info": ""
+        }
+    ],
+    "error_code": 0
+}

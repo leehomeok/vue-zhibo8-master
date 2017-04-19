@@ -23,8 +23,11 @@ const API = {
     combatDetail: 'http://lolapi.games-cube.com/GameDetail?qquin=',
     newstVideos: 'http://infoapi.games-cube.com/GetNewstVideos?p=',
     commenterList: 'http://infoapi.games-cube.com/GetAuthors',
+    nba_score_list: 'http://localhost:3000/NBAScore/',
     "tuji_url": 'http://localhost:3000/picture/',
-    "jifenbang": 'http://localhost:3000/score/'
+    "jifenbang": 'http://localhost:3000/score/',
+    "player": "http://localhost:3000/player",
+    "footballTeam": "http://localhost:3000/footballTeam"
 }
 
 const store = new Vuex.Store({
@@ -40,18 +43,37 @@ const store = new Vuex.Store({
             teamList: [],
             top: 0,
             bottom: 0
-        }
+        },
+        NBA_score: {
+
+        },
+        football_team: {
+            team_name: "",
+            coach: "",
+            city: '',
+            match: "", //当前联赛排名,
+            team_id: '',
+            team_logo: "",
+            league_id: "",
+            players: [],
+            honor: [],
+            saicheng: {}
+        },
+        player: {}
     },
     mutations: {
         get_league_list(state, object) {
             axios.get(API.jifenbang + object.id, {
                 headers: TOKEN
             }).then((res) => {
-                //console.log(res.data.result);
-                if (res.data.error_code == 0) {
-                    state.league.teamList = res.data.result;
+                if (res.status == 200) {
+                    for (let i = 0, len = res.data.data.length; i < len; i++) {
+                        res.data.data[i]["进失球"] = res.data.data[i]["进\/失球"];
+                    }
+                    state.league.teamList = res.data.data;
+
                 } else {
-                    console.log("hehe")
+                    console.log(res)
                 }
             })
         },
@@ -59,7 +81,6 @@ const store = new Vuex.Store({
             axios.get(API.tuji_url + object.id, {
                 headers: TOKEN
             }).then((res) => {
-                //console.log(API.tuji_url + object.id);
                 if (res.data.code == 200) {
                     state.picture.picList = res.data.data;
                 } else {
@@ -67,13 +88,54 @@ const store = new Vuex.Store({
                 }
             })
         },
+        get_nbaScore_list(state, object) { //NBA积分榜
+            axios.get(API.nba_score_list, {}).then((res) => {
+                if (res.status == 200) {
+                    state.NBA_score = res.data.data;
+                    console.log(state.NBA_score);
+                } else {
+                    console.log(res)
+                }
+            })
+        },
+        get_football_teaminfo(state, object) { //获取某支足球队的信息
+            axios.get(API.footballTeam + "?league=" + object.league_id + "&team=" + object.team_id, {}).then((res) => {
+                if (res.status == 200) {
+                    //console.log(res.data)
+                    state.football_team.players = res.data.qdzr;
+                    state.football_team.honor = res.data.rys;
+                    state.football_team.saicheng = res.data.saicheng;
+                    //console.log(state.football_team);
 
+                } else {
+                    console.log(res)
+                }
+            })
+        },
+        get_player_info(state, obj) {
+            axios.get(API.player + "?league=" + state.football_team.league_id + "&player=" + obj.player_id, {}).then((res) => {
+                if (res.status == 200) {
+                    state.player = res.data;
+                    state.player.player_img = 'http://data.zhibo8.cc/' + res.data.player_img;
+                    //console.log(res.data)
+                }
+            })
+
+        },
         set_title(state, obj) {
             state.picture.title = obj.title;
         },
-        set_league_name(state, obj) {
+        set_league_name(state, obj) { //设置联赛名称
             state.league.name = obj.name;
-        }
+        },
+        set_football_team(state, obj) { //设置球队名称,LOGO
+            // console.log(obj);
+            state.football_team.team_name = obj.team_name;
+            state.football_team.team_logo = obj.team_logo;
+            state.football_team.team_id = obj.team_id;
+            state.football_team.league_id = obj.league_id;
+        },
+
     },
     actions: {
         SET_TITLE(context, object) {
@@ -88,41 +150,26 @@ const store = new Vuex.Store({
         GET_PICTURE_LIST(context, object) {
             context.commit('get_picture_list', object)
         },
+        GET_NBASCORE_LIST(context, object) {
+            context.commit('get_nbaScore_list', object)
+        },
+        GET_FOOTBALL_TEAMINFO(context, object) {
+            context.commit('get_football_teaminfo', object)
+        },
+        GET_PLAYER_INFO(context, object) {
+            context.commit('get_player_info', object)
+        },
+        SET_FOOTBALL_TEAM(context, object) {
+            context.commit('set_football_team', object);
+        },
 
     },
     getters: {
-        skins(state) {
-            var skins = state.league.teamList
-            for (var i = 0; i < state.champion.skins.length; i++) {
-                let obj = {
-                    name: state.champion.skins[i].name,
-                    skinurl: `http://cdn.tgp.qq.com/pallas/images/skins/original/${state.champion.key}-${state.champion.skins[i].id}.jpg`,
-                    videourl: state.champion.skins[i].displayUrl
-                }
-                skins.push(obj)
-            }
-            return skins
-        },
         teams(state) {
             var teams = state.league.teamList
             return teams
         },
-        skills(state) {
-            var skills = [{
-                name: state.champion.passive.name,
-                description: state.champion.passive.description,
-                imgurl: `http://ossweb-img.qq.com/images/lol/img/passive/${state.champion.passive.image.full}`
-            }]
-            for (var i = 0; i < state.champion.spells.length; i++) {
-                let obj = {
-                    name: state.champion.spells[i].name,
-                    description: state.champion.spells[i].tooltip,
-                    imgurl: `http://ossweb-img.qq.com/images/lol/img/spell/${state.champion.spells[i].id}.png`
-                }
-                skills.push(obj)
-            }
-            return skills
-        },
+
         winners(state) {
             return state.combatDetail.gamer_records.slice(0, 5)
         },

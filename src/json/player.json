@@ -1,0 +1,676 @@
+{
+    "player_id": "41310",
+    "player_name": "莱万多夫斯基",
+    "player_img": "/application/public/football/player/9/41310.png",
+    "team_name": "拜仁",
+    "team_id": "961",
+    "country": "波兰",
+    "surname": "莱万多夫斯基",
+    "birth": "1988-08-21",
+    "position": "前锋",
+    "age": "29",
+    "high": "185.00",
+    "b_country": "波兰",
+    "weight": "79.00",
+    "b_local": "Warszawa",
+    "foot": "",
+    "jstj": {
+        "league": {
+            "title": "联赛",
+            "list": [{
+                    "match_date": "2016/2017",
+                    "match_team": "拜仁",
+                    "match_name": "德甲",
+                    "match_time": "2,075",
+                    "match_num": "25",
+                    "match_first": "23",
+                    "match_t": "2",
+                    "match_goal": "21",
+                    "yellow_num": "3",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2015/2016",
+                    "match_team": "拜仁",
+                    "match_name": "德甲",
+                    "match_time": "2,653",
+                    "match_num": "32",
+                    "match_first": "29",
+                    "match_t": "3",
+                    "match_goal": "30",
+                    "yellow_num": "2",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2014/2015",
+                    "match_team": "拜仁",
+                    "match_name": "德甲",
+                    "match_time": "2,487",
+                    "match_num": "31",
+                    "match_first": "28",
+                    "match_t": "3",
+                    "match_goal": "17",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2013/2014",
+                    "match_team": "多特蒙德",
+                    "match_name": "德甲",
+                    "match_time": "2,803",
+                    "match_num": "33",
+                    "match_first": "31",
+                    "match_t": "2",
+                    "match_goal": "20",
+                    "yellow_num": "3",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2012/2013",
+                    "match_team": "多特蒙德",
+                    "match_name": "德甲",
+                    "match_time": "2,594",
+                    "match_num": "31",
+                    "match_first": "29",
+                    "match_t": "2",
+                    "match_goal": "24",
+                    "yellow_num": "2",
+                    "red_num": "1"
+                },
+                {
+                    "match_date": "2011/2012",
+                    "match_team": "多特蒙德",
+                    "match_name": "德甲",
+                    "match_time": "2,880",
+                    "match_num": "34",
+                    "match_first": "34",
+                    "match_t": "0",
+                    "match_goal": "22",
+                    "yellow_num": "4",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2010/2011",
+                    "match_team": "多特蒙德",
+                    "match_name": "德甲",
+                    "match_time": "1,585",
+                    "match_num": "33",
+                    "match_first": "15",
+                    "match_t": "18",
+                    "match_goal": "8",
+                    "yellow_num": "4",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2009/2010",
+                    "match_team": "莱克普斯纳",
+                    "match_name": "波兰甲",
+                    "match_time": "2,520",
+                    "match_num": "28",
+                    "match_first": "28",
+                    "match_t": "0",
+                    "match_goal": "18",
+                    "yellow_num": "5",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2008/2009",
+                    "match_team": "莱克普斯纳",
+                    "match_name": "波兰甲",
+                    "match_time": "2,435",
+                    "match_num": "30",
+                    "match_first": "27",
+                    "match_t": "3",
+                    "match_goal": "13",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": " ",
+                    "match_team": " ",
+                    "match_name": "累计",
+                    "match_time": "22,032",
+                    "match_num": "277",
+                    "match_first": "244",
+                    "match_t": "33",
+                    "match_goal": "173",
+                    "yellow_num": "24",
+                    "red_num": "1"
+                }
+            ]
+        },
+        "cup": {
+            "title": "杯赛",
+            "list": [{
+                    "match_date": "2016/2017",
+                    "match_team": "拜仁",
+                    "match_name": "德国杯",
+                    "match_time": "270",
+                    "match_num": "3",
+                    "match_first": "3",
+                    "match_t": "0",
+                    "match_goal": "5",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2015/2016",
+                    "match_team": "拜仁",
+                    "match_name": "德国杯",
+                    "match_time": "570",
+                    "match_num": "6",
+                    "match_first": "6",
+                    "match_t": "0",
+                    "match_goal": "3",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2014/2015",
+                    "match_team": "拜仁",
+                    "match_name": "德国杯",
+                    "match_time": "495",
+                    "match_num": "5",
+                    "match_first": "5",
+                    "match_t": "0",
+                    "match_goal": "2",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2013/2014",
+                    "match_team": "多特蒙德",
+                    "match_name": "德国杯",
+                    "match_time": "490",
+                    "match_num": "5",
+                    "match_first": "5",
+                    "match_t": "0",
+                    "match_goal": "2",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2012/2013",
+                    "match_team": "多特蒙德",
+                    "match_name": "德国杯",
+                    "match_time": "339",
+                    "match_num": "4",
+                    "match_first": "4",
+                    "match_t": "0",
+                    "match_goal": "1",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2011/2012",
+                    "match_team": "多特蒙德",
+                    "match_name": "德国杯",
+                    "match_time": "565",
+                    "match_num": "6",
+                    "match_first": "6",
+                    "match_t": "0",
+                    "match_goal": "7",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2010/2011",
+                    "match_team": "多特蒙德",
+                    "match_name": "德国杯",
+                    "match_time": "154",
+                    "match_num": "2",
+                    "match_first": "1",
+                    "match_t": "1",
+                    "match_goal": "0",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": " ",
+                    "match_team": " ",
+                    "match_name": "累计",
+                    "match_time": "2,883",
+                    "match_num": "31",
+                    "match_first": "30",
+                    "match_t": "1",
+                    "match_goal": "20",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                }
+            ]
+        },
+        "area": {
+            "title": "区域赛事",
+            "list": [{
+                    "match_date": "2017",
+                    "match_team": "拜仁",
+                    "match_name": "国际冠军杯",
+                    "match_time": "46",
+                    "match_num": "1",
+                    "match_first": "1",
+                    "match_t": "0",
+                    "match_goal": "0",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2016/2017",
+                    "match_team": "拜仁",
+                    "match_name": "欧冠杯",
+                    "match_time": "706",
+                    "match_num": "8",
+                    "match_first": "8",
+                    "match_t": "0",
+                    "match_goal": "7",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2016/2017",
+                    "match_team": "拜仁",
+                    "match_name": "德超杯",
+                    "match_time": "90",
+                    "match_num": "1",
+                    "match_first": "1",
+                    "match_t": "0",
+                    "match_goal": "0",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2016",
+                    "match_team": "拜仁",
+                    "match_name": "国际冠军杯",
+                    "match_time": "0",
+                    "match_num": "0",
+                    "match_first": "0",
+                    "match_t": "0",
+                    "match_goal": "0",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2016",
+                    "match_team": "拜仁",
+                    "match_name": "国际冠军杯",
+                    "match_time": "76",
+                    "match_num": "1",
+                    "match_first": "1",
+                    "match_t": "0",
+                    "match_goal": "0",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2015/2016",
+                    "match_team": "拜仁",
+                    "match_name": "欧冠杯",
+                    "match_time": "942",
+                    "match_num": "12",
+                    "match_first": "11",
+                    "match_t": "1",
+                    "match_goal": "9",
+                    "yellow_num": "2",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2015/2016",
+                    "match_team": "拜仁",
+                    "match_name": "德超杯",
+                    "match_time": "72",
+                    "match_num": "1",
+                    "match_first": "1",
+                    "match_t": "0",
+                    "match_goal": "0",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2015",
+                    "match_team": "拜仁",
+                    "match_name": "Hybrid Friendlies",
+                    "match_time": "0",
+                    "match_num": "0",
+                    "match_first": "0",
+                    "match_t": "0",
+                    "match_goal": "0",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2015",
+                    "match_team": "拜仁",
+                    "match_name": "Audi Cup",
+                    "match_time": "88",
+                    "match_num": "2",
+                    "match_first": "0",
+                    "match_t": "2",
+                    "match_goal": "2",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2015",
+                    "match_team": "拜仁",
+                    "match_name": "国际冠军杯",
+                    "match_time": "300",
+                    "match_num": "5",
+                    "match_first": "4",
+                    "match_t": "1",
+                    "match_goal": "2",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2014/2015",
+                    "match_team": "拜仁",
+                    "match_name": "欧冠杯",
+                    "match_time": "931",
+                    "match_num": "12",
+                    "match_first": "10",
+                    "match_t": "2",
+                    "match_goal": "6",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2014/2015",
+                    "match_team": "拜仁",
+                    "match_name": "德超杯",
+                    "match_time": "90",
+                    "match_num": "1",
+                    "match_first": "1",
+                    "match_t": "0",
+                    "match_goal": "0",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2014",
+                    "match_team": "拜仁",
+                    "match_name": "国际冠军杯",
+                    "match_time": "259",
+                    "match_num": "3",
+                    "match_first": "3",
+                    "match_t": "0",
+                    "match_goal": "2",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2014",
+                    "match_team": "多特蒙德",
+                    "match_name": "国际冠军杯",
+                    "match_time": "209",
+                    "match_num": "5",
+                    "match_first": "3",
+                    "match_t": "2",
+                    "match_goal": "3",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2014",
+                    "match_team": "拜仁",
+                    "match_name": "Hybrid Friendlies",
+                    "match_time": "80",
+                    "match_num": "1",
+                    "match_first": "1",
+                    "match_t": "0",
+                    "match_goal": "1",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": " ",
+                    "match_team": " ",
+                    "match_name": "累计",
+                    "match_time": "3,889",
+                    "match_num": "53",
+                    "match_first": "45",
+                    "match_t": "8",
+                    "match_goal": "32",
+                    "yellow_num": "3",
+                    "red_num": "0"
+                }
+            ]
+        },
+        "country": {
+            "title": "国家队比赛",
+            "list": [{
+                    "match_date": "2018 Russia",
+                    "match_team": "波兰",
+                    "match_name": "世欧预",
+                    "match_time": "360",
+                    "match_num": "4",
+                    "match_first": "4",
+                    "match_t": "0",
+                    "match_goal": "7",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2016 France",
+                    "match_team": "波兰",
+                    "match_name": "欧洲杯",
+                    "match_time": "510",
+                    "match_num": "5",
+                    "match_first": "5",
+                    "match_t": "0",
+                    "match_goal": "1",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2016 France",
+                    "match_team": "波兰",
+                    "match_name": "欧锦预",
+                    "match_time": "876",
+                    "match_num": "10",
+                    "match_first": "10",
+                    "match_t": "0",
+                    "match_goal": "13",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2016",
+                    "match_team": "波兰",
+                    "match_name": "国际A级",
+                    "match_time": "167",
+                    "match_num": "3",
+                    "match_first": "2",
+                    "match_t": "1",
+                    "match_goal": "0",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2015",
+                    "match_team": "波兰",
+                    "match_name": "国际A级",
+                    "match_time": "90",
+                    "match_num": "1",
+                    "match_first": "1",
+                    "match_t": "0",
+                    "match_goal": "2",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2014",
+                    "match_team": "波兰",
+                    "match_name": "国际A级",
+                    "match_time": "153",
+                    "match_num": "2",
+                    "match_first": "2",
+                    "match_t": "0",
+                    "match_goal": "1",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "",
+                    "match_team": "波兰",
+                    "match_name": "国际A级",
+                    "match_time": "456",
+                    "match_num": "6",
+                    "match_first": "6",
+                    "match_t": "0",
+                    "match_goal": "0",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2013",
+                    "match_team": "波兰",
+                    "match_name": "国际A级",
+                    "match_time": "317",
+                    "match_num": "4",
+                    "match_first": "4",
+                    "match_t": "0",
+                    "match_goal": "0",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "",
+                    "match_team": "波兰",
+                    "match_name": "国际A级",
+                    "match_time": "44",
+                    "match_num": "1",
+                    "match_first": "0",
+                    "match_t": "1",
+                    "match_goal": "1",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2010 South Africa",
+                    "match_team": "波兰",
+                    "match_name": "世欧预",
+                    "match_time": "314",
+                    "match_num": "9",
+                    "match_first": "2",
+                    "match_t": "7",
+                    "match_goal": "2",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "",
+                    "match_team": "波兰",
+                    "match_name": "国际A级",
+                    "match_time": "1,002",
+                    "match_num": "13",
+                    "match_first": "12",
+                    "match_t": "1",
+                    "match_goal": "5",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2012年波兰/乌克兰",
+                    "match_team": "波兰",
+                    "match_name": "欧洲杯",
+                    "match_time": "270",
+                    "match_num": "3",
+                    "match_first": "3",
+                    "match_t": "0",
+                    "match_goal": "1",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "",
+                    "match_team": "波兰",
+                    "match_name": "国际A级",
+                    "match_time": "808",
+                    "match_num": "11",
+                    "match_first": "9",
+                    "match_t": "2",
+                    "match_goal": "4",
+                    "yellow_num": "1",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": "2014 Brazil",
+                    "match_team": "波兰",
+                    "match_name": "世欧预",
+                    "match_time": "810",
+                    "match_num": "9",
+                    "match_first": "9",
+                    "match_t": "0",
+                    "match_goal": "3",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                },
+                {
+                    "match_date": " ",
+                    "match_team": " ",
+                    "match_name": "累计",
+                    "match_time": "284",
+                    "match_num": "4",
+                    "match_first": "4",
+                    "match_t": "0",
+                    "match_goal": "1",
+                    "yellow_num": "0",
+                    "red_num": "0"
+                }
+            ]
+        }
+    },
+    "hour": {
+        "country": [
+            [
+                "德国杯",
+                "冠军：1次",
+                "2011/2012"
+            ],
+            [
+                "波超杯",
+                "冠军：1次",
+                "2009/2010"
+            ],
+            {
+                "0": "德超杯",
+                "1": "冠军：1次",
+                "2": "2013/2014",
+                "row": "2"
+            },
+            [
+                "亚军：2次",
+                "2012/2013,2011/2012"
+            ],
+            [
+                "欧冠杯",
+                "亚军：1次",
+                "2012/2013"
+            ]
+        ],
+        "club": [{
+                "0": "德甲",
+                "1": "冠军：2次",
+                "2": "2010/2011,2011/2012",
+                "row": "2"
+            },
+            [
+                "亚军：1次",
+                "2012/2013"
+            ],
+            [
+                "波兰甲",
+                "冠军：1次",
+                "2009/2010"
+            ]
+        ]
+    },
+    "transfer": [
+        [
+            "",
+            "莱克普斯纳",
+            "多特蒙德",
+            "4.75百万欧元"
+        ]
+    ]
+}

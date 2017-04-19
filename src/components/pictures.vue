@@ -55,9 +55,8 @@
       this.$router.push({name: 'tuji', params: {id: item.id}})
       this.$store.dispatch('SET_TITLE', {
         title: item.title
-        })     
-      
-    }
+        })   
+      }
     }
   }
 </script>

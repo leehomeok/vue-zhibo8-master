@@ -11,6 +11,9 @@ export default new Router({
         { path: '/nba', name: "nba", component: require('../components/nba') },
 
         { path: '/score/:id', name: "score", component: require('../components/jifenbang') },
+        { path: '/NBAscore', name: "NBAscore", component: require('../components/nba_jifenbang') },
+        { path: '/team/:league/:id', name: "team", component: require('../components/team') },
+        { path: '/player/:id', name: "player", component: require('../components/player') },
         { path: '/tuji/:id', name: "tuji", component: require('../components/tuji') }
     ]
 });

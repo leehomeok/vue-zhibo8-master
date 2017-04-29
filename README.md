@@ -13,7 +13,12 @@
 <img src="http://i2.muimg.com/591508/0636ddfae9006aba.png">
 <img src="http://i2.muimg.com/591508/aed06a80b7023a4b.png">
 <img src="http://i2.muimg.com/591508/dde61e39e041db73.png">
-启动这个项目之前，你需要在本地跑一个<a href="">node服务</a>
+启动这个项目之前，你需要在本地跑一个<a href="https://github.com/leehomeok/zhibo8-restAPI">node服务</a>
+主要功能有 近2轮欧洲五大联赛的赛事预告，和赛后比分
+NBA最近3天的赛况，以及直播（链到腾讯视频）
+欧洲5大联赛和中超的积分榜，NBA东西部的积分榜
+直播吧图集
+欧洲5大联赛的球队信息，球员信息
 
 ## Build Setup
 

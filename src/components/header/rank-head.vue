@@ -2,7 +2,11 @@
   <div class="rank-head container head-nav"  id="transparent-header">
     <mt-navbar  class="container" >
       <mt-tab-item @click.native="goNBA()">{{nba.cname}}</mt-tab-item>
-      <mt-tab-item v-for="(item,index) in leagueList"  @click.native="goRouter(item)">{{item.cname}}</mt-tab-item>      
+      <mt-tab-item 
+        v-for="(item,index) in leagueList"  :key="index"
+        @click.native="goRouter(item)">
+        {{item.cname}}
+      </mt-tab-item>      
     </mt-navbar>
   </div>
 </template>
@@ -15,10 +19,10 @@ export default {
   data(){
     return {
       name:'rank-head',
-        nba:{
-          id:1,
-          cname:"NBA"
-          },
+      nba:{
+        id:1,
+        cname:"NBA"
+      },
       leagueList:[      
         {id:8,cname:"英超",name:"yingchao",top:4,bottom:3},
         {id:7,cname:"西甲",name:"xijia",top:4,bottom:3},
@@ -27,7 +31,6 @@ export default {
         {id:16,cname:"法甲",name:"fajia",top:3,bottom:3},
         {id:51,cname:"中超",name:"zhongchao",top:3,bottom:2},
       ]
-
     }
   },
   components:{Navbar, TabItem},
@@ -36,10 +39,13 @@ export default {
   },
   methods:{
     goRouter(item){
-      this.$router.push({ 
-        name: 'score',params:{id:item.id}             
-             })
-      this.$store.dispatch('GET_LEAGUE_LIST',{ id:item.id});
+      this.$router.push({
+        name: 'score',
+        query: {
+          league: item.cname
+        }         
+      })
+      this.$store.dispatch('GET_LEAGUE_LIST', item.cname);
       this.$store.dispatch('SET_LEAGUE_NAME',{name: item.name});
     },
     goNBA(){

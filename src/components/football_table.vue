@@ -36,26 +36,25 @@
 
 import { mapState, mapActions, mapGetters } from 'vuex'
 export default{
-    components:{
+  components:{
 
-    },
-   data(){
+  },
+  data(){
     return {
-     
     }
   },
   created () {
-      
   },
 computed:{
     ...mapState(['league','title']),
     ...mapGetters(['teams']),
   },
   methods:{
-        getData(){
-            this.$store.dispatch('GET_LEAGUE_LIST',{
-                 id:this.$route.params.id});
-        }
+    getData(){
+      this.$store.dispatch('GET_LEAGUE_LIST',{
+        id:this.$route.params.id
+      });
+    }
   }
 }
 </script>

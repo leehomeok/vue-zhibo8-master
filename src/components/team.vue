@@ -1,260 +1,89 @@
 <template>
-   
-   <div class="team">
-   <rankHead></rankHead>
-   <div class="content">
+  <div class="team">
+    <rankHead></rankHead>
+    <div class="content">
       <div class="c_top clear">
         <div class="t_logo">
-           <img v-bind:src="football_team.team_logo">
+           <img :src="football_team.team_logo">
         </div>
         <div class="t_info">
-          <h1>{{football_team.saicheng.team_info.team_name||football_team.saicheng.team_info.all_name}}</h1>
-          <p>{{football_team.saicheng.team_info.match}}</p>
-        </div>  
-
+          <h1></h1>
+          <p></p>
+        </div>
       </div>
     <div class="tab_nav">
-       <ul class="clear tab_li" >
-          <li v-bind:class="{'active':item==active}" v-for="(item,index) in tabs" @click="active=item">{{item}}</li>
-       </ul>
+      <ul class="clear tab_li" >
+        <li :class="{'active':item==active}" 
+          v-for="(item,index) in tabList" 
+          :key="index"
+          @click="active=item.label">
+          {{item.label}}
+        </li>
+      </ul>
+    </div>
+
+  
+   </div>
   </div>
-
-    <section v-show="active=='球队'">
-       <div class="team_info">
-         <div class="clear">
-           <p><label>全称：</label><span>{{football_team.saicheng.team_info.team_name||football_team.saicheng.team_info.all_name}}</span></p> 
-           <p><label>所在城市：</label><span>{{football_team.saicheng.team_info.city}}</span></p> 
-         </div>
-         <div class="clear">
-           <p><label>球队主场：</label><span>{{football_team.saicheng.team_info.team_host}}</span></p> 
-           <p><label>主教练：</label><span>{{football_team.saicheng.team_info.coach}}</span></p> 
-         </div>
-       </div>
-       <p class="title">{{football_team.saicheng.jfb.title}}：</p>
-       <div class="outer_wrap clear">
-         <div class="table_left">
-           <div class="data_title data_val ">&nbsp;</div>
-           <div class="data_title">
-                       <span>总成绩</span>
-              </div>
-              <div class="data_val odd">
-                            <span>主场</span>
-                 </div>
-                 <div class="data_val">
-                        <span>客场</span>
-                   </div>
-         </div>
-         <div class="table_content">
-             <table class="player_table_500">
-                <thead>
-                  <tr>
-                    <th>排名</th>
-                    <th>赛</th>
-                    <th>积分</th>
-                    <th>胜</th>
-                    <th>平</th>
-                    <th>负</th>
-                    <th>得</th>
-                    <th>失</th>
-                    <th>净</th>
-                    <th>胜率</th>
-                    <th>平率</th>
-                    <th>负率</th>
-                    <th>均得</th>
-                    <th>均失</th>
-                    <th>近6轮走势</th>
-                  </tr>
-                </thead>
-               <tbody>
-                  <tr v-for="(item,index) in football_team.saicheng.jfb.list">
-                    <td>{{item.rank}}</td>
-                    <td>{{item.sai}}</td>
-                    <td>{{item.win}}</td>
-                    <td>{{item.equal}}</td>
-                    <td>{{item.lose}}</td>
-                    <td>{{item.well}}</td>
-                    <td>{{item.lost}}</td>
-                    <td>{{item.jing}}</td>
-                    <td>{{item.win_rate}}</td>
-                    <td>{{item.equal_rate}}</td>
-                    <td>{{item.lose_rate}}</td>
-                    <td>{{item.e_well}}</td>
-                    <td>{{item.e_lost}}</td>
-                    <td>{{item.score}}</td>
-                    <td>{{item.trend_6}}</td>
-                  </tr>
-               </tbody>
-             </table>          
-         </div>
-         
-       </div>
-       
-         <p class="title">荣誉室</p> 
-         <div class="rys">
-            <table>
-              <colgroup  align="center" valign="middle"></colgroup>
-              <colgroup align="right" ></colgroup>
-              <tbody>
-              <tr class="" v-for="(item,index) in football_team.honor">
-                <td class="honor">{{item.name}}</td>
-                <td class="years">{{item.date}}</td>
-              </tr>
-              </tbody>
-            </table>
-
-         </div>
-
-    </section>
-
-   <section class="team_player" v-show="active=='球员'">
-     <p class="title">球队阵容：</p>
-     <table>
-       <tbody v-for="item in football_team.players">        
-         <tr>
-           <td colspan="2" class="p_title">{{item.title}}</td>           
-         </tr>
-          <tr>
-           <td>号码</td>
-           <td>球员姓名</td>
-          </tr>
-       <tr v-for="player in item.list">
-        <td>
-           {{player.player_num}}
-        </td>
-         <td>
-           <a @click="goPlayerDetail(player)">{{player.player_name}}</a>
-        </td>  
-      </tr>
-      </tbody>
-      
-      
-      </table>
-    </section>
-
-    <section v-show="active=='赛程'">
-      <p class="title">近期比赛：</p>
-      <div class="outer_wrap clear" style="margin-bottom:10px;">
-        <div class="table_left">
-          <div>赛事</div>
-          <div v-for="item in football_team.saicheng.zb.list">
-             {{item.game}}
-          </div>
-        </div>       
-        <div class="table_content">
-          <table class="match" style="width:300px;" >
-             <thead>
-              <tr>              
-               <td>比赛时间</td>
-               <td>主队</td>
-               <td>比分</td>
-               <td>客队</td>
-               <td>胜负</td>               
-              </tr>
-             </thead>
-             <tbody>
-               <tr v-for="item in football_team.saicheng.zb.list">
-                 <td>{{item.game_date}}</td>
-                 <td>{{item.host}}</td>
-                 <td>{{item.score}}</td>
-                 <td>{{item.guest}}</td>
-                 <td>{{item.win_lose}}</td>
-               </tr>
-             </tbody>
-          </table>
-        </div>
-      </div>
-      <p class="title">未来5场比赛</p>
-
-      <div class="outer_wrap clear" style="margin-bottom:10px;">
-        <div class="table_left">
-          <div>赛事</div>
-          <div v-for="item in football_team.saicheng.future.list">
-             {{item.game}}
-          </div>
-        </div>       
-        <div class="table_content">
-          <table class="match" style="width:300px;" >
-             <thead>
-              <tr>              
-               <td>比赛时间</td>
-               <td>主队</td>
-               <td>比分</td>
-               <td>客队</td>
-               <td>胜负</td>               
-              </tr>
-             </thead>
-             <tbody>
-               <tr v-for="item in football_team.saicheng.future.list">
-                 <td>{{item.game_date}}</td>
-                 <td>{{item.host}}</td>
-                 <td>{{item.score}}</td>
-                 <td>{{item.guest}}</td>
-                 <td>{{item.win_lose}}</td>
-               </tr>
-             </tbody>
-          </table>
-        </div>
-      </div>
-    </section>
-
-
-
-   </div>
-
-
-   </div>
 </template>
 
 
 <script>
- import { Cell,Indicator, TabContainer, TabContainerItem  } from 'mint-ui'
-  import { mapState, mapActions, mapGetters } from 'vuex'
-  import rankHead from './header/rank-head'; 
-  import $ from 'webpack-zepto';
-  import  {teams} from '../json/football_teams.js'
-  export default {
-      data(){
-        return {
-          active:'球队',
-          tabs:['球队','球员','赛程']
-      
-        }
-      },
-   created(){
-      this.getTeam()
-    },
-    mounted(){
-
-    },
- components:{
+import { Cell,Indicator, TabContainer, TabContainerItem  } from 'mint-ui'
+import { mapState, mapActions, mapGetters } from 'vuex'
+import rankHead from './header/rank-head'; 
+import $ from 'webpack-zepto';
+import  {teams} from '../json/football_teams.js'
+export default {
+  data(){
+    let tabList = ['资料', '阵容', '伤病','赛程','新闻'].map((item,index) => {
+      return {
+        label:item,
+        id: index + 1
+      }
+    })
+    return {
+      tabList,
+      active:'阵容'
+    }
+  },
+  created(){
+    this.getTeam()
+  },
+  mounted(){
+  },
+  components:{
    rankHead, Cell,Indicator,TabContainer, TabContainerItem 
    },
    computed:{
     ...mapState(['football_team','title']),
     ...mapGetters(['teams']),
   },
-    methods:{
-      getTeam(){
-           this.$store.dispatch('GET_FOOTBALL_TEAMINFO',{
-                team_id: this.$store.state.football_team.team_id,
-                league_id:this.$store.state.football_team.league_id
-                });     
-       },
-     goPlayerDetail(item) {
-      this.$router.push({name: 'player', params: {id: item.player_id}})
+  methods:{
+    getTeam(){
+      this.$store.dispatch('GET_FOOTBALL_TEAMINFO',{
+        team_id: this.$route.query.id,
+        league_id:this.$route.query.league
+      });     
+    },
+    goPlayerDetail(item) {
       this.$store.dispatch('GET_PLAYER_INFO', {
         player_id: item.player_id
-        })   
-      },
+      })  
+      this.$router.push({
+        name: 'player', 
+        params: {id: item.player_id}
+      })
     }
   }
+}
     
 </script>
 <style>
 .content{margin-top:94px;}
 .tab_nav{height:30px;line-height:30px;border-bottom:1px solid #e4e4e4;position:relative;}
 .tab_li{position:absolute;left:0;top:0;width:100%;}
-.tab_li li {float:left;width:33.3333333333%}
+.tab_li li {float:left;width:20%}
 .tab_li li.active{color:#439cf8;border-bottom:1px solid #439cf8;}
 .player_table_500{width:500px;}
 .c_top { padding:20px;border-bottom:1px solid #e4e4e4;}

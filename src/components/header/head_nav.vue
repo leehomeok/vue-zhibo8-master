@@ -24,10 +24,10 @@
       goRouter(index){
         switch(index){
           case 1:this.$router.push({path:'/'});break;
-          case 2:this.$router.push({path:'endgame'});break;
-          case 3:this.$router.push({path:'score/8'});break;
-          case 4:this.$router.push({path:'nba'});break;
-          case 5:this.$router.push({path:'pic'});break;
+          case 2:this.$router.push({path:'/endgame'});break;
+          case 3:this.$router.push({path:'/score?league=英超'});break;
+          case 4:this.$router.push({path:'/nba'});break;
+          case 5:this.$router.push({path:'/pic'});break;
           default:this.$router.push({path:'/'});break;
         }
       }

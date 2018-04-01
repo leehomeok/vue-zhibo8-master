@@ -1,20 +1,20 @@
 <template>
   <div class="nba_score">
-   <rank-head></rank-head>
-    <table  v-for="(area,index) in NBA_score">
-         <tr>
-           <th v-for="item in area.items">{{item}}</th>
-         </tr>
-         <tr v-for="(team,index) in area.list">
-           <td>{{ team.西部||team.东部 }}</td>
-           <td class="t_name"><img :src="team.球队图标">{{team.球队}}</td>       
-           <td>{{team.胜}}</td>         
-           <td>{{team.负}}</td>
-           <td>{{team.胜率}}</td>
-           <td><span>{{team.胜差}}</span></td>
-           <td>{{team.近况}}</td>
-         </tr>
-      </table>
+    <rank-head></rank-head>
+    <table  v-for="area in NBA_score" :key="area.items">
+      <tr>
+        <th v-for="item in area.items" :key="item">{{item}}</th>
+      </tr>
+      <tr v-for="team in area.list" :key="team.胜率">
+        <td>{{ team.西部||team.东部 }}</td>
+        <td class="t_name"><img :src="team.球队图标">{{team.球队}}</td>       
+        <td>{{team.胜}}</td>         
+        <td>{{team.负}}</td>
+        <td>{{team.胜率}}</td>
+        <td><span>{{team.胜差}}</span></td>
+        <td>{{team.近况}}</td>
+      </tr>
+    </table>
   </div>
 </template>
 
@@ -27,7 +27,6 @@
     data(){
       return {
         rankList:[]
-      
       }
     },   
     created(){

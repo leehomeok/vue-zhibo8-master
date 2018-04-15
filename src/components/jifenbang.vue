@@ -13,7 +13,8 @@
           <th>净胜球</th>
           <th>积分</th>
         </tr>
-        <tr v-for="(team,index) in league.teamList">
+        <tr v-for="(team,index) in league.teamList"
+          :key="index">
           <td>{{team.排名}}</td>
           <td class="t_name"><a @click="goTeamDetail(team)">
             <img :src="team.球队图标">{{team.球队}}</a>

@@ -5,7 +5,7 @@ import { Indicator,Cell } from 'mint-ui';
 Vue.use(Vuex)
 
 const API = {
-	nba_score_list: 'http://localhost:3000/NBAScore/',
+	"nba_score_list": 'http://localhost:3000/NBAScore/',
 	"tuji_url": 'http://localhost:3000/picture/',
 	"player": "http://localhost:3000/player",
 	"footballTeam": "http://localhost:3000/footballTeam"
@@ -86,6 +86,7 @@ const store = new Vuex.Store({
 				}
 			})
 		},
+
 		get_league_list(state, league) {
 			let url ="/api/shuju/public/index.php?_url=/data/index&league="+ league +"&tab=积分榜&year=[year]";
 			axios.get(url, {}).then((res) => {
@@ -99,6 +100,7 @@ const store = new Vuex.Store({
 				}
 			})
 		},
+		
 		get_picture_list(state, object) {
 				axios.get(API.tuji_url + object.id, {}).then((res) => {
 						if (res.data.code == 200) {
@@ -108,6 +110,7 @@ const store = new Vuex.Store({
 						}
 				})
 		},
+
 		get_nbaScore_list(state, object) { //NBA积分榜
 				axios.get(API.nba_score_list, {}).then((res) => {
 						if (res.status == 200) {
@@ -118,6 +121,7 @@ const store = new Vuex.Store({
 						}
 				})
 		},
+
 		get_football_teaminfo(state, object) { //获取某支足球队的信息
 			axios.get(API.footballTeam + "?league=" + object.league_id + "&teamId=" + object.team_id, {}).then((res) => {
 				if (res.status == 200) {
@@ -129,6 +133,7 @@ const store = new Vuex.Store({
 				}
 			})
 		},
+
 		get_player_info(state, obj) {
 			axios.get(API.player + "?league=" + state.football_team.league_id + "&player=" + obj.player_id, {}).then((res) => {
 				if (res.status == 200) {
@@ -137,18 +142,22 @@ const store = new Vuex.Store({
 				}
 			})
 		},
+
 		set_title(state, obj) {
 			state.picture.title = obj.title;
 		},
+
 		set_league_name(state, obj) { //设置联赛名称
 			state.league.name = obj.name;
 		},
+
 		set_football_team(state, obj) { //设置球队名称,LOGO
 			state.football_team.team_name = obj.team_name;
 			state.football_team.team_logo = obj.team_logo;
 			state.football_team.team_id = obj.team_id;
 			state.football_team.league_id = obj.league_id;
 		},
+
 		get_news (state) {
 			axios.get('http://localhost:3000/PickNews', {}).then((res) => {
 				if (res.status == 200) {
@@ -156,6 +165,7 @@ const store = new Vuex.Store({
 				}
 			})
 		},
+
 		get_banner (state) {
 			axios.get('http://localhost:3000/getImg',{}).then(res => {
 				if (res.status == 200) {
@@ -163,6 +173,7 @@ const store = new Vuex.Store({
 				}
 			})
 		},
+
 		get_end_game (state, date) {
 			Indicator.open({
 				text: '加载中...',

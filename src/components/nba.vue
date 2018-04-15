@@ -28,8 +28,7 @@
 </template>
 
 <script type="es6">
-  import { Indicator } from 'mint-ui';
-  import {parseLogo,compare} from '../common/parseLogo'
+  import {Indicator} from 'mint-ui';
   import {mapGetters} from 'vuex';
   export default {
     data(){

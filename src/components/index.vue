@@ -17,19 +17,19 @@
              <span>{{item.sTime}}</span> 
           </div>
           <div class="team">
-            <img class="team-logo" :src="item.hostLogo" alt="">
+            <img v-if="item.hostLogo" class="team-logo" :src="item.hostLogo.replace('//duihui.qiumibao.com', '../static/assets/images')" alt="">
             <span>{{item.hostTeam}}</span>
           </div>
           <div class="point">
             <span>{{item.score}}</span>
           </div>
           <div class="team">
-             <img class="team-logo" :src="item.guestLogo" alt="">
+             <img v-if="item.guestLogo" class="team-logo" :src="item.guestLogo" alt="">
              <span>{{item.guestTeam}}</span>
           </div>
           <div class=clock>
-            <!--<p>{{item.situation}}</p>-->
-             <img width="24" height="24" src="../assets/clock1.png">   
+            <p v-if="item.situation">{{item.situation}}</p>
+             <img v-else width="24" height="24" src="../assets/clock1.png">   
           </div>
         </li>
     </ul>

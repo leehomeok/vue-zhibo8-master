@@ -3,7 +3,7 @@
     <div class="title">
          图集   
     </div>
-    <div v-for="(item,index) in plist"  >
+    <div v-for="(item,index) in plist"  :key="index">
       <a  class="item clear" @click="goDetail(item)">
          <img slot="icon" :src="item.src" width="88" height="60">
          <div class="item-right">
